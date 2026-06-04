@@ -23,3 +23,16 @@ class Pet:
 
     def get_age(self) -> int:
         return self.__age
+
+def main():
+    print("[INFO] Initializing Pet Data Entry Program...")
+    print("-" * 50)
+
+    my_pet = Pet()
+
+    user_name = input("Enter your pet's name: ")
+    user_type = input("Enter your pet's animal type (e.g., Dog, Cat, Bird): ")
+    user_age = int(input("Enter your pet's age: "))
+
+    print("-" * 50)
+    print("[INFO] Storing data fields securely using object mutators...")
