@@ -36,3 +36,21 @@ def main():
 
     print("-" * 50)
     print("[INFO] Storing data fields securely using object mutators...")
+
+    my_pet.set_name(user_name)
+    my_pet.set_animal_type(user_type)
+    my_pet.set_age(user_age)
+
+    print("[INFO] Retrieving and displaying telemetry data...")
+    print("-" * 50)
+
+    print("OBJECT INSTANCE DATA SUMMARY:")
+    print(f" -> Pet Name         : {my_pet.get_name()}")
+    print(f" -> Animal Species   : {my_pet.get_animal_type()}")
+    print(f" -> Registered Age   : {my_pet.get_age()} year(s) old")
+    print("-" * 50)
+    print("[INFO] Execution terminated successfully.")
+
+
+if __name__ == "__main__":
+    main()
